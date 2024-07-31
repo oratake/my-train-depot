@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e8c3c14ff33b199b4a0838993eb8423",
+    "content-hash": "3f52ab17baa1cb91f75d81cfbcda8227",
     "packages": [
         {
             "name": "brick/math",
@@ -5680,6 +5680,87 @@
     ],
     "packages-dev": [
         {
+            "name": "composer/semver",
+            "version": "3.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c51258e759afdb17f1fd1fe83bc12baaef6309d6",
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.4",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "support": {
+                "irc": "ircs://irc.libera.chat:6697/composer",
+                "issues": "https://github.com/composer/semver/issues",
+                "source": "https://github.com/composer/semver/tree/3.4.2"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-07-12T11:35:52+00:00"
+        },
+        {
             "name": "fakerphp/faker",
             "version": "v1.23.1",
             "source": {
@@ -5863,6 +5944,122 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "howyi/conv",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/howyi/conv.git",
+                "reference": "e22fddfd04f907f84c145e0e296210d3423ad0b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/howyi/conv/zipball/e22fddfd04f907f84c145e0e296210d3423ad0b5",
+                "reference": "e22fddfd04f907f84c145e0e296210d3423ad0b5",
+                "shasum": ""
+            },
+            "require": {
+                "composer/semver": "^1.4 || ^2.0 || ^3.0",
+                "ext-pdo": "*",
+                "php": ">=7.1",
+                "symfony/console": ">=2.0"
+            },
+            "require-dev": {
+                "howyi/conv-test-suite": "dev-master",
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpspec/prophecy": "^1.7",
+                "phpstan/phpstan": "^0.12.5",
+                "phpunit/phpunit": "^6.2 || ^7.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "symfony/var-dumper": "^3.3"
+            },
+            "bin": [
+                "bin/conv"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Howyi\\Conv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hayashi Takuya",
+                    "email": "howyi.lq@gmail.com"
+                }
+            ],
+            "description": "Generate MySQL migration queries from actual DB and DDL",
+            "support": {
+                "issues": "https://github.com/howyi/conv/issues",
+                "source": "https://github.com/howyi/conv/tree/v2.1.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/howyi",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-21T14:56:17+00:00"
+        },
+        {
+            "name": "howyi/conv-laravel",
+            "version": "v3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/howyi/conv-laravel.git",
+                "reference": "c045ac1e10a647496e8618f8f1d88ccc0b8f106e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/howyi/conv-laravel/zipball/c045ac1e10a647496e8618f8f1d88ccc0b8f106e",
+                "reference": "c045ac1e10a647496e8618f8f1d88ccc0b8f106e",
+                "shasum": ""
+            },
+            "require": {
+                "howyi/conv": "^2.0",
+                "illuminate/console": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Howyi\\ConvLaravel\\ConvServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Howyi\\ConvLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hayashi Takuya",
+                    "email": "howyi.lq@gmail.com"
+                }
+            ],
+            "description": "MySQL migration query auto generate on Laravel/Lumen",
+            "support": {
+                "issues": "https://github.com/howyi/conv-laravel/issues",
+                "source": "https://github.com/howyi/conv-laravel/tree/v3.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/howyi",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-04-18T08:51:52+00:00"
         },
         {
             "name": "laravel/pint",
