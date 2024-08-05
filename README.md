@@ -3,6 +3,7 @@
 Nゲージ,プラレールなどの在庫管理ツール
 
 ## 環境構築
+開発環境はlaravel sailで構築
 ```
 $ gh repo clone oratake/my-train-depot
 $ cd my-train-depot
@@ -14,7 +15,9 @@ $ docker run --rm \
     -w /var/www/html \
     laravelsail/php82-composer:latest \
     composer install --ignore-platform-reqs
+$ cp .env.example .env
 $ ./vendor/bin/sail up
+$ ./vendor/bin/sail artisan key:generate
 $ ./vendor/bin/sail npm i
 $ ./vendor/bin/sail npm run dev
 ```
